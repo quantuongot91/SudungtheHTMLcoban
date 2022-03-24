@@ -1,0 +1,11 @@
+Dùng thẻ <ul> để định nghĩa một danh sách không xếp thứ tự
+Dùng thuộc tính CSS list-style-type để định nghĩa biểu tượng cho các phần tử trong danh sách
+Dùng thẻ <ol> để định nghĩa một danh sách xếp thứ tự
+Dùng thuộc tính type để định nghĩa kiểu đánh thứ tự
+Dùng thẻ <li> để định nghĩa một phần tử  trong danh sách
+Dùng thẻ <dl> để định nghĩa một danh sách miêu tả
+Dùng thẻ <dt> để định nghĩa một thuật ngữ
+Dùng thẻ <dd> để miêu tả thuật ngữ ngay phía trên nó trong danh sách miêu tả
+Có thể lồng các danh sách bên trong các danh sách
+Các phần tử trong danh sách có thể chứa các thành phần HTML khác
+Dùng thuộc tính CSS float:left hoặc display:inline để hiển thị danh sách nằm ngang

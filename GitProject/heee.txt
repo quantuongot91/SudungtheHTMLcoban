@@ -1,0 +1,15 @@
+dịch vụ lưu trữ, quản lí mã nguồn internet
+tìm hiểu câu lệnh linux để dùng github
+git init khởi tạo repo,tao ra thử mục ẩn.git
+1 số câu lệnh
+sau khi tạo repo thêm các file vào đây git add .
+git commit -m "message"
+git push origin master
+đẩy message lên 
+
+clone 1 dự án trên github về bằng git clone
+
+git init
+chỉ dùng cho tạo project mới
+
+setting developer setting 
