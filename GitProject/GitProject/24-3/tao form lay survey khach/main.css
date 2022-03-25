@@ -1,0 +1,19 @@
+#dollas{
+    width: 100px;
+}
+#cents{
+    width: 20px;
+}
+#other{
+    width: 20%;
+}
+#area{
+    width: 45%;
+    height: 55%;
+}
+.a, .b, .c, .d{
+    border: 1px solid black;
+}
+.a, .b, .c, .d{
+    border-collapse: collapse;
+}
