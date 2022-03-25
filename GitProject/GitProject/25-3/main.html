@@ -5,11 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    
+
+
 </head>
 <body>
-   
+<p>select a new car</p>
+<select id="mySelect" onchange="do_something()">
+    <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+    <option value="Mercedes">Mercedes</option>
+    <option value="Volvo">Volvo</option>
+
+
+</select>
+
 </body>
-<link rel="stylesheet" href="main.js">
+
+<script>
+    function do_something () {
+        var selectedValue = document.getElementById("mySelect").value;
+        alert(selectedValue);
+
+    }
+    var selectedElement = document.getElementById("mySelect");
+    selectedElement.addEventListener("change",changeFunction);
+    function changeFunction() {
+        var selectValue = document.getElementById("mySelect").value;
+        alert(selectValue);
+    }
+</script>
 </html>
