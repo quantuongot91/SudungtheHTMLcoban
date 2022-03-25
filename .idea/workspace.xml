@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7821bc7-1769-430e-b080-dbcb35a0fa2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/GitProject/GitProject/24-3/tkbC032201/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/GitProject/GitProject/24-3/tkbC032201/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitProject/GitProject/25-3/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/GitProject/GitProject/25-3/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitProject/GitProject/24-3/tkb nang cao/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/GitProject/GitProject/24-3/tkb nang cao/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitProject/GitProject/24-3/tkb nang cao/tkbnangcao.html" beforeDir="false" afterPath="$PROJECT_DIR$/GitProject/GitProject/24-3/tkb nang cao/tkbnangcao.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +40,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -58,6 +61,11 @@
       <workItem from="1648190482470" duration="3764000" />
       <workItem from="1648199343531" duration="1313000" />
       <workItem from="1648202664712" duration="1342000" />
+      <workItem from="1648214735604" duration="840000" />
+      <workItem from="1648216543041" duration="136000" />
+      <workItem from="1648216752139" duration="281000" />
+      <workItem from="1648217548227" duration="1790000" />
+      <workItem from="1648220118381" duration="312000" />
     </task>
     <servers />
   </component>
