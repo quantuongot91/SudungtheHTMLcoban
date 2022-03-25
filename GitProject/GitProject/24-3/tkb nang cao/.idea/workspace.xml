@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7b4da101-67e0-4db6-bad8-48eb79cc7602" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tkbnangcao.html" beforeDir="false" afterPath="$PROJECT_DIR$/tkbnangcao.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,10 @@
   </component>
   <component name="ProjectId" id="26smOP47D781DXHtYMQLfPcDz4k" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -33,6 +40,8 @@
       <option name="presentableId" value="Default" />
       <updated>1648220634727</updated>
       <workItem from="1648220635915" duration="18000" />
+      <workItem from="1648221239585" duration="366000" />
+      <workItem from="1648221661930" duration="535000" />
     </task>
     <servers />
   </component>
