@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>
+    <input id="a" type="text" name="a">x <sup>2</sup>+
+    <input id="b" type="text" name="b">x+
+    <input id="c" type="text" name="c">
+    <button id="kq" onclick="cal()">result</button>
+
+</p>
+</body>
+<script>function cal() {
+    let a = document.getElementById('a').value;
+    let b = document.getElementById('b').value;
+    let c = document.getElementById('c').value;
+    let x1, x2, x;
+    let delta;
+
+
+    let result = document.getElementById('kq');
+    if (a == 0) {
+        if (b == 0 && c == 0) {
+            result.innerHTML = "vô số nghiệm";
+        } else if (b == 0 && c != 0) {
+            result.innerHTML = "vô nghiệm";
+        } else {
+            x = -c / b;
+            result.innerHTML = x;
+        }
+    } else {
+        delta = b * b - a * c * 4;
+        if (delta < 0) {
+            result.innerHTML = 'vô nghiệm';
+        } else if (delta == 0) {
+            x1 = x2 = (-b) / (2 * a);
+            result.innerHTML = "x1 = x2 =" + x1;
+        } else {
+            x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            result.innerHTML = ' x1 ' + x1 + 'x2' + x2
+
+        }
+
+    }
+
+}
+
+
+</script>
+</html>
