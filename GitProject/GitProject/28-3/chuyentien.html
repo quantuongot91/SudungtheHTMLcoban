@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+
+    </tr>
+    <tr>
+        <th>
+            <form>
+                <label>
+                    <input id="tien">
+                </label>
+            </form>
+        </th>
+        <th>
+            <label><select id="countryin">
+                <option id="VND">VND</option>
+            </select></label>
+        </th>
+
+        <th>
+            <label>
+                <select id="countryout">
+                    <option id="USD">USD</option>
+                </select>
+            </label>
+        </th>
+        <th>
+            <input type="button" onclick="change()" value="Convert">
+        </th>
+    </tr>
+</table> <br>
+<p> USD=<span id="y"></span></p>
+</body>
+<script>
+    function change() {
+        let a = document.getElementById("tien").value;
+
+        let  b = a / 23000;
+        document.getElementById("y").innerHTML = b;
+    }
+</script>
+</html>
