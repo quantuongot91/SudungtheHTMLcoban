@@ -1,62 +1,116 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <div class="calculator">-->
+
+<!--        <p type="text" placeholder="0" id="output-screen></p>-->
+<!--        <button onclick="Clear('')">Cl</button>-->
+<!--        <button onclick="del('')">DEL</button>-->
+<!--        <button onclick="nutbam('%')">%</button>-->
+<!--        <button onclick="nutbam('/')">/</button>-->
+<!--        <button onclick="nutbam('7')">7</button>-->
+<!--        <button onclick="nutbam('8')">8</button>-->
+<!--        <button onclick="nutbam('9')">9</button>-->
+<!--        <button onclick="nutbam('*')">*</button>-->
+<!--        <button onclick="nutbam('4')">4</button>-->
+<!--        <button onclick="nutbam('5')">5</button>-->
+<!--        <button onclick="nutbam('6')">6</button>-->
+<!--        <button onclick="nutbam('-')">-</button>-->
+<!--        <button onclick="nutbam('1')">1</button>-->
+<!--        <button onclick="nutbam('2')">2</button>-->
+<!--        <button onclick="nutbam('3')">3</button>-->
+<!--        <button onclick="nutbam('+')">+</button>-->
+<!--        <button onclick="nutbam('0')">0</button>-->
+<!--        <button onclick="nutbam('.')">.</button>-->
+<!--        <button onclick="calculate('')" class="equal">=</button>-->
+
+<!--    </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--<script>-->
+
+
+<!--</script>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Máy Tính Nâng Cao</title>
+    <style>
+        table, th,td {
+            border:1px solid black ;
+            font-weight:bold;
+            text-align: center;
+        }
+        td {
+            width: 30px;
+        }
+        button {
+            width: 50px;
+            height: 50px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <div class="calculator">
-
-        <input type="text" placeholder="0" id="output-screen">
-
-
-        <button onclick="Clear('')">Cl</button>
-        <button onclick="del('')">DEL</button>
-        <button onclick="display('%')">%</button>
-        <button onclick="display('/')">/</button>
-        <button onclick="display('7')">7</button>
-        <button onclick="display('8')">8</button>
-        <button onclick="display('9')">9</button>
-        <button onclick="display('*')">*</button>
-        <button onclick="display('4')">4</button>
-        <button onclick="display('5')">5</button>
-        <button onclick="display('6')">6</button>
-        <button onclick="display('-')">-</button>
-        <button onclick="display('1')">1</button>
-        <button onclick="display('2')">2</button>
-        <button onclick="display('3')">3</button>
-        <button onclick="display('+')">+</button>
-        <button onclick="display('0')">0</button>
-        <button onclick="display('.')">.</button>
-        <button onclick="calculate('')" class="equal">=</button>
-
-    </div>
-</div>
+<table>
+    <tr>
+        <th colspan="4" style="height: 50px; text-align: right"><p id="display-el"></p></th>
+    </tr>
+    <tr>
+        <td><button onclick='pressKey("7")' >7</button></td>
+        <td><button onclick='pressKey("8")' >8</button></td>
+        <td><button onclick='pressKey("9")' >9</button></td>
+        <td><button onclick='pressKey("/")' >/</button></td>
+    </tr>
+    <tr>
+        <td><button onclick='pressKey("4")' >4</button></td>
+        <td><button onclick='pressKey("5")' >5</button></td>
+        <td><button onclick='pressKey("6")' >6</button></td>
+        <td><button onclick='pressKey("*")' >x</button></td>
+    </tr>
+    <tr>
+        <td><button onclick='pressKey("1")' >1</button></td>
+        <td><button onclick='pressKey("2")' >2</button></td>
+        <td><button onclick='pressKey("3")' >3</button></td>
+        <td><button onclick='pressKey("-")' >-</button></td>
+    </tr>    <tr>
+    <td><button onclick='pressKey("0")' >0</button></td>
+    <td><button onclick='pressKey(".")' >.</button></td>
+    <td><button onclick='equal()' >=</button></td>
+    <td><button onclick='pressKey("+")' >+</button></td>
+</tr>
+    <tr>
+        <td colspan="2"><button onclick='clearAll()' style="width: 100px;" >Clear All</button></td>
+        <td colspan="2"><button onclick='undo()' style="width: 100px;" >Undo</button></td>
+    </tr>
+</table>
 </body>
-<script>
-    let outputScreen = document.getElementById("output-screen");
+    <script>
+        let display = "";
 
-    function display(num){
-        outputScreen.value += num;
-    }
-
-    function calculate (){
-        try {
-            outputScreen.value = eval(outputScreen.value);
+        function pressKey(key) {
+            display += key
+            document.getElementById("display-el").innerText = display
         }
-        catch(err) {
-            alert("Invalid")
+        function  equal() {
+            result = eval(display)
+            document.getElementById("display-el").innerText = result
         }
-    }
-    
-    function  Clear() {
-        outputScreen.value = "";
-    }
-
-    function del () {
-        outputScreen.value = outputScreen.value.slice(0,-1);
-    }
-
-</script>
+        function clearAll () {
+            display = "";
+            document.getElementById("display-el").innerText = display
+        }
+        function undo () {
+            display = display.slice(0,-1)
+            document.getElementById("display-el").innerText = display
+        }
+    </script>
 </html>
