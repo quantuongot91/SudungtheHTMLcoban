@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+ <img src="/doraemon.jpg" id="dorae" style="position: absolute;left: 0;top:0;" height="100" width="100">
 </body>
+<script>
+        window.onkeydown = dichuyen;
+
+    let dorae = document.getElementById('dorae')
+        function dichuyen (go) {
+        switch (go.key) {
+            case 'w':
+                dorae.style.top = parseInt(dorae.style.top) -50 + "px";
+                break;
+                case 's':
+                    dorae.style.top = parseInt(dorae.style.top) +50 + "px";
+                break;
+                case 'a':
+                    dorae.style.left = parseInt(dorae.style.left) -50 + "px";
+                    break;
+                    case 'd':
+                        dorae.style.left = parseInt(dorae.style.left) +50 + "px";
+                break;
+
+
+
+        }
+        }
+
+
+
+</script>
 </html>
+
+

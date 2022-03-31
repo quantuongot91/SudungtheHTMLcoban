@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = +prompt('doanh so ban hang(trieu VND)')
+    let b = a * 0.1
+    let c = a * 0.2
+    let d = a * 0.3
+
+    if(a > 10) {
+        document.write('doanh so' + a);
+        document.write('hoa hong' + b);
+        document.write('tong thu' +(a + b));
+    }else if (15 < a && a < 20) {
+        document.write('doanh so' +a);
+        document.write('hoa hong' + c);
+        document.write('tong thu' +(a + c));
+    }else {
+        document.write('tong thu' +(a + d))
+    }
+</script>
+</html>
