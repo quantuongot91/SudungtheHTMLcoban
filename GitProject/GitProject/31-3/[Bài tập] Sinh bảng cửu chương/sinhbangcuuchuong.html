@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #css {
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            margin-left: 30%;
+        }
+
+        td {
+            border: 1px solid black;
+            padding-left: 10px;
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<script>
+    let html="<table id='css'>";
+    for(i=1;i<=10;i++) {
+        html += "<tr>";
+        for (j = 1; j <= 10; j++) {
+            html += "<td>";
+            html += j + 'X' + i + '=' + i*j;
+            html += "</td>"
+        }
+        html+="</tr>"
+    }
+    document.write(html);
+</script>
+</html>
