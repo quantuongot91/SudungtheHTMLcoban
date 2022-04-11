@@ -1,0 +1,17 @@
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: darksalmon;
+    float:left;
+    height: 500px;
+}
+.list_product {
+    width: 60%;
+    background-color: gray;
+    float: left;
+
+}
+.add-product {
+    width: 40%;
+    float: left;
+}
