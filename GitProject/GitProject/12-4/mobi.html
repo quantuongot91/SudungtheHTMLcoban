@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Mobile {
+        constructor(name) {
+            this.name = name;
+            this.pin = 100;
+            this.inbox = [];
+            this.outbox = [];
+            this.message = "";
+            this.status = false;
+        }
+
+        checkStatus() {
+            if (this.status) {
+                conso.log('điện thoại đang bật')
+            } else {
+                console.log('điện thoại đang tắt')
+            }
+        }
+
+        writeMessage(text) {
+            this.message = text;
+            this.pin--;
+        }
+
+        turnOn() {
+            this.status = true;
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+
+        sendMessage(phone) {
+            this.outbox.push(this.message)
+            phone.inbox.push(this.message)
+            this.pin--;
+        }
+    }
+
+    let Samsung = new Mobile('Samsung');
+    let Iphone = new Mobile('Iphone');
+    Iphone.writeMessage('xin chào');
+    console.log(Iphone.outbox)
+    Iphone.sendMessage(Samsung);
+    Samsung.writeMessage('Hi,chào bạn');
+    Samsung.sendMessage(Iphone);
+    this.pin--;
+    if (Mobile.pin < 20) {
+        alert('sạc pin');
+    }
+
+
+</script>
+</html>
